@@ -1,0 +1,233 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="net.wehebs.brainsense.MainActivity" >
+
+    <!-- 
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    -->
+    
+    <!--  ad -->
+    <com.google.android.gms.ads.AdView android:id="@+id/adView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="bottom"
+	    ads:adUnitId="@string/ad_id"
+	    ads:adSize="SMART_BANNER"
+	/>
+    
+    <!--  Scene 1 UI -->
+    <ImageView
+        android:id="@+id/scene1_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:src="@drawable/circle" />
+	
+    <TextView
+        android:id="@+id/scene1_target_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="90dp"
+        android:text="@string/your_target"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25sp" />
+    
+     <!--  the targe_min, target_sec, target_milli are common for scene 1 and 3 -->
+     <TextView
+        android:id="@+id/scene1_target_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/zero_min"
+        android:textColor="@color/white"
+        android:textStyle="normal"        
+        android:textSize="70sp" />
+
+    <TextView
+        android:id="@+id/scene1_target_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="@string/zero_sec"
+        android:textColor="@color/white"
+        android:textStyle="normal"   
+        android:textSize="70sp" />
+    
+    <TextView
+        android:id="@+id/scene1_target_millisec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"        
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/zero_milli"
+        android:textColor="@color/white"
+        android:textStyle="normal"           
+        android:textSize="40sp" />   
+
+    <TextView 
+        android:id="@+id/scene1_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"     
+        android:layout_marginTop="90dp"
+        android:text="@string/start"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25sp" />
+
+    <!--  Scene 2 UI -->
+    <TextView 
+        android:id="@+id/scene2_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"     
+        android:layout_marginTop="90dp"
+        android:text="@string/stop"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25sp" />        
+
+	<ImageButton
+        android:id="@+id/scene2_lap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="130dp"  
+        android:background="@color/black"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_lap_normal" />
+	    
+    
+    <!--  Scene 3 UI -->
+    <TextView
+        android:id="@+id/scene3_target_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="110dp"
+        android:text="@string/your_target"
+        android:textColor="@color/gray"
+        android:textStyle="bold"
+        android:textSize="15sp" />        
+
+    <TextView
+        android:id="@+id/scene3_target_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="90dp"
+        android:text="@string/zero_sec"
+        android:textColor="@color/gray"
+        android:textStyle="bold"
+        android:textSize="25sp" />    
+    
+    <TextView
+        android:id="@+id/scene3_guess_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:text="@string/your_guess"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15sp" />    
+
+    <TextView 
+        android:id="@+id/scene3_age_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"     
+        android:layout_marginTop="30dp"
+        android:text="@string/your_age"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp" />    
+
+	<TextView 
+        android:id="@+id/scene3_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"     
+        android:layout_marginTop="70dp"
+        android:text="@string/zero_sec"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        android:textSize="60sp" />
+
+	<ImageButton
+        android:id="@+id/scene3_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="110dp"
+        android:layout_marginTop="130dp"  
+        android:background="@color/black"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_reset_normal" />
+
+	<ImageButton
+        android:id="@+id/scene3_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="130dp"        
+        android:background="@color/black"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_share_normal" />	
+
+	<ImageView
+        android:id="@+id/scene3_brain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"        
+        android:background="@color/black"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:src="@drawable/brain_icon" />	
+        
+	<ImageButton
+    	android:id="@+id/leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="170dp" 
+        android:background="@color/black"
+        android:src="@drawable/crown"
+	/>    
+
+	<!-- sign-in button -->
+	<com.google.android.gms.common.SignInButton
+	 android:id="@+id/sign_in_button"
+	 android:layout_width="wrap_content"
+	 android:layout_height="wrap_content"
+     android:layout_gravity="top"
+	 />
+	 
+	<!-- sign-out button 
+	<Button
+	 android:id="@+id/sign_out_button"
+	 android:layout_width="wrap_content"
+	 android:layout_height="wrap_content"
+     android:layout_gravity="top"
+	 android:text="Sign Out"
+	 android:visibility="gone" />
+	-->
+        
+	 
+     
+	 
+</FrameLayout>

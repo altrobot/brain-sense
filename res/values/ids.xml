@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>                          
+    <string name="app_id">49635527576</string>
+	<string name="leaderboard">CgkImJeI9LgBEAIQCQ</string>
+    <string name="ad_id">ca-app-pub-6833783217201460/9933033033</string>
+    <string name="achievement_lv5">CgkImJeI9LgBEAIQAg</string>
+    <string name="achievement_lv4">CgkImJeI9LgBEAIQCg</string>
+    <string name="achievement_lv3">CgkImJeI9LgBEAIQBA</string>
+    <string name="achievement_lv2">CgkImJeI9LgBEAIQBQ</string>
+    <string name="achievement_lv1">CgkImJeI9LgBEAIQBg</string>
+</resources>

@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="net.wehebs.brainsense.MainActivity" >
+
+    <group android:checkableBehavior="single">
+	    <item
+	        android:id="@+id/toggle_sound"
+	        android:title="@string/action_settings"/>
+	</group>
+	
+</menu>
+
+

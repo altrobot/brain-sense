@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Brain Massage</string>
+    <string name="action_settings">Toggle Sound</string>
+    <string name="start">START</string>
+    <string name="your_target">Your TARGET</string>
+    <string name="your_guess">YOUR GUESS</string>
+    <string name="your_age">YOUR BRAIN AGE</string>
+    <string name="stop">STOP</string>
+    <string name="zero_min">0</string>
+    <string name="zero_sec">00</string>
+    <string name="zero_milli">000</string>
+    <string name="screenshot_name">Brain_Massage.jpg</string>
+    <string name="screenshot_msg">Saving as Brain_Massage.jpg</string>
+    <string name="about">About</string>
+    <string name="visit">Visit</string>
+    <string name="about_msg">How to play? simply click the circle when your brain thinks that the target time reached. The app will measure your brain age and response ability, which can be submitted to compete others by clicking the "Crown" image.
+        If you want to know more about how important the brain balance is, please click the visit button.</string>
+    <string name="no_signin_msg">You are not signed in. Please sign in first</string>
+    <string name="no_signin_msg_achievement">You are not signed in. After sign-in, please click the "Crown" image to submit the result.</string>
+    <string name="submit_title">Submit Your Response"</string>
+    <string name="submit_msg">Do you want to submit your response ability (not the brain age) to the leaderboard?</string>
+    <string name="rate_url">https://play.google.com/store/apps/details?id=net.wehebs.brainsense</string>
+</resources>
